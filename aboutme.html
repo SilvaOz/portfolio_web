@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONTAWESOME LINK  -->
+    <script src="https://kit.fontawesome.com/c642629364.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>WebDeveloper | OSSI</title>
+</head>
+
+<body>
+    <header class="wrapper">
+        <!-- LOGO -->
+        <div class="brand">
+            <a href="./home.html"> <h2>O<span>S</span></h2></a>
+        </div>
+        <!-- NAV MENU -->
+        <nav class="navbar">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="toggle">
+                <span class="menu__burger">&equiv;</span>
+            </label>
+            <ul class="menu">
+                <li><a href="./home.html">HOME</a></li>
+                <li><a class="active"  href="./aboutme.html">ABOUT ME</a></li>
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>     
+        <!-- ABOUT ME SECTION -->
+        <article class="about">
+            <img class="about__image" src="./images/ReadyPlayerMe-Avatar.png" alt="oscar silva">
+            <section class="about__info">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perferendis eaque itaque odio
+                    facilis
+                    dicta recusandae repellendus, nobis laborum unde accusamus voluptas vero nemo quia ab, fuga
+                    consequatur,
+                    culpa eum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla numquam totam possimus velit ipsam.
+                    Eligendi quisquam obcaecati repudiandae. Aspernatur placeat porro eaque, numquam quas quia dolorem
+                    nesciunt iure similique reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis!</p>
+                <button class="download__cv">Read more</button>
+            </section>
+        </article>
+        
+    </main>
+    <!-- ANIMATION PARTICLES -->
+    <div id="particles-js"></div>
+    <!-- FOOTER SECTION  -->
+    <footer>
+        <section class="footer__content">
+            <h2>Oscar Silva</h2>
+            <h5>Frontend Developer</h5>
+        </section>
+        <section class="social__networks">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter-square"></i>
+        </section>
+    </footer>
+    <!-- SCRIPT ANIMATION PARTICLES -->
+    <script src="./particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 366,
+                        "color": "#03dac6",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": false
+            }
+        )
+    </script>
+</body>
+
+</html>
