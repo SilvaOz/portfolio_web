@@ -25,99 +25,37 @@
             </label>
             <ul class="menu">
                 <li><a class="active" href="./index.html">HOME</a></li>
-                <li><a href="../src/aboutme.html">ABOUT ME</a></li>
-                <li><a href="../src/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="../src/contact.html">CONTACT</a></li>
+                <li><a href="./aboutme.html">ABOUT ME</a></li>
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <main>      
-        <!-- PORTFOLIO SECTION  -->
-        <article class="portfolio">
-            <section class="portfolio__headings">
-                <h2>My Portfolio</h2>
-                <section class="portfolio__container">
-                    <!-- card#1 -->
-                    <section class="card">
-                        <div class="card__img">
-                        </div>
-                        <div class="card__title">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, saepe.
-                            </p>
-                        </div>
-                        <div class="card__project__links" >
-                            <a href="https://github.com/SilvaOz" target="_blank"  >
-                                <i class="fab fa-github"></i> 
-                            </a>
-                            <a href="">
-                                <i class="fas fa-globe-asia"></i>
-                            </a>
-                            <a href="">
-                                <i class="fas fa-code"></i>
-                            </a>
-                        </div>
-                        <div class="button__content">
-                            <button class="project__details__button download__cv">
-                                <a href="#">Project Details</a>
-                            </button>
-                        </div>
-                    </section>
-                    <!-- CARD # 2  -->
-                    <section class="card">
-                        <div class="card__img">
-                        </div>
-                        <div class="card__title">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, molestias.</p>
-                        </div>
-                        <div class="card__project__links">
-                            <a href="https://github.com/SilvaOz" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="">
-                                <i class="fas fa-globe-asia"></i>
-                            </a>
-                            <a href="">
-                                <i class="fas fa-code"></i>
-                            </a>
-                        </div>
-                        <div class="button__content">
-                            <button class="project__details__button download__cv">
-                                <a href="#">Project Details</a>
-                            </button>
-                        </div>
-                    </section>
-                    <!-- CARD # 3 -->
-                    <section class="card">
-                        <div class="card__img">
-                        </div>
-                        <div class="card__title">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, fugiat?
-                            </p>
-                        </div>
-                        <div class="card__project__links">
-                            <a href="https://github.com/SilvaOz" target="_blank" >
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="">
-                                <i class="fas fa-globe-asia"></i>
-                            </a>
-                            <a href="">
-                                <i class="fas fa-code"></i>
-                            </a>
-                        </div>
-                        <div class="button__content">
-                            <button class="project__details__button download__cv">
-                                <a href="#">Project Details</a>
-                            </button>
-                        </div>
-                    </section>
+    <main>
+        <!-- HERE IS MY CONTACT SECTION  -->
+        <article class="contact__section ">
+            <section class="contact__heading">
+                
+                <h2 class="">Keep in touch</h2>
+            </section>
+            <!-- IMAGE CONTACT  -->
+            <img class="img__contact" src="./images/ReadyPlayerMe-Avatar.png" alt="Oscar Silva Avatar">
+
+            <!-- FORM CONTACT SECTION  -->
+            <section class="container__contact">
+                <section class="contact__form">
+                    <h4>Send me a message...</h4>
+                    <form class="form__group">
+                        <input type="text" placeholder="Name" class="input" required>
+                        <label for=""></label>
+                        <input type="email" placeholder="Email" class="input">
+
+                        <textarea name="message" placeholder="Place your message here..."></textarea>
+                        <button type="submit" class="btn-submit">Send message</button>
+                    </form>
                 </section>
             </section>
         </article>
-        
     </main>
     <!-- ANIMATION PARTICLES -->
     <div id="particles-js"></div>
