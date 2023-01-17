@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Rowdies&family=Rubik+Vinyl&family=Shadows+Into+Light&display=swap');
 
 * {
     margin: 0;
@@ -17,8 +18,6 @@ body {
     width: 100vw;
     /* position: fixed; */
     z-index: 1;
-    background-color: #191c3200;
-    color: white;
     display: flex;
     justify-content: space-between;
 }
@@ -26,7 +25,7 @@ body {
 /* logo */
 .brand {
     padding: 4em 9.5em;
-    
+
 }
 
 .brand a {
@@ -35,11 +34,14 @@ body {
 }
 
 .brand h2 {
-    color: #03dac6;
+    color: #018C7E;
 }
 
 .brand span {
-    color: white;
+    color: #1CFFE8;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2.8rem;
+
 }
 
 /* navigator */
@@ -81,7 +83,7 @@ body {
 }
 
 .menu a {
-    color: lightgray;
+    color: #018C7E;
     text-decoration: none;
     font-weight: 600;
     padding: 10px 15px;
@@ -89,37 +91,41 @@ body {
 }
 
 .menu .active {
-    color: #03dac6;
+    color: #D94602;
 }
 
 .menu a:hover {
-    
-    border: 2px solid #03dac6;
-    color: #03dac6;
-    /* transition: ease-in .4s; */
+    color: #1CFFE8;
+    transition: ease-in .1s;
 }
 
 /* here is my main  */
 
 
 .info__general {
+    padding-bottom: 7rem;
     margin: 0 auto;
     width: 80vw;
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-   
+    gap: 4.5rem;
+}
+
+.info__content {
+    position: relative;
+    width: 35rem;
 }
 
 .info__content h1 {
     font-size: 3em;
-    color: #fff;
+    color: #D5D90D;
+
 }
 
 .info__content p {
     color: #fff;
-    margin-right: 5em;
     text-align: justify;
 }
 
@@ -127,9 +133,13 @@ body {
     color: #03dac6;
 }
 
+.info__content a {
+    text-decoration: none;
+}
+
 .download__cv {
     padding: 10px 20px;
-    background-color: #03dac6;
+    background-color: #018C7E;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
@@ -138,38 +148,40 @@ body {
 }
 
 .download__cv:hover {
-    background-color: #fff;
+    background-color: #1CFFE8;
     box-shadow: none;
 }
 
 .info__image {
-    width: 500px;
+    width: 600px;
     border: 6px solid #03dac6;
-    height: 500px;
-    
-    
+    height: 600px;
+
+
 }
 
 /* SECTION ABOUT  */
 .about {
-    padding-left: 2rem;
+    padding-left: 3rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     color: white;
 }
 
 .about__image {
-    width: 120%;
     grid-column: 1/5;
-    height: 100vh;
+    width: 80vh;
+    height: 80vh;
+    position: relative;
+    /* top: 5rem; */
 }
 
 .about__info {
     grid-column: 5/10;
-    
+
 }
 
 .about__info h2 {
@@ -188,7 +200,6 @@ body {
 .portfolio {
     width: 100vw;
     height: 100vh;
-    /* border: 3px solid red; */
 }
 
 .portfolio__headings {
@@ -197,26 +208,23 @@ body {
 }
 
 .portfolio h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     border-bottom: 3px solid #03dac6;
 }
 
 .portfolio__container {
-    width: 60vw;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    padding-top: 3em;
+    justify-content: space-between;
+    padding-top: 6em;
     gap: 10px;
-    /* border: 3px solid red; */
 }
 
 .card {
-    width:350px;
+    width: 350px;
     height: 450px;
-    background-color: rgb(28, 48, 86);
+    background-color: #214001;
     margin: 1em;
 }
 
@@ -230,22 +238,22 @@ body {
 
 .card__title {
     padding: 20px;
-    color: #fff;
+    color: black;
 
 }
 
 .card__title p {
     padding-top: 1rem;
-
+    color: white;
 }
 
 .card__project__links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .card__project__links a {
-    color: #fff;
+    color: #D95518;
     text-decoration: none;
 }
 
@@ -254,14 +262,13 @@ body {
 }
 
 .card .project__details__button {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     margin: 1em;
 }
 
 .card .project__details__button a {
     text-decoration: none;
-    color: #191c32;
     text-transform: uppercase;
 }
 
@@ -283,14 +290,16 @@ body {
 
 .contact__heading h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 2em;
     border-bottom: 3px solid #03dac6;
 }
 
 .img__contact {
-    width: 750px;
-    height: 700px;
+    width: 120%;
+    height: 100%;
     grid-column: 1;
+    position: relative;
+    right: 8rem;
 }
 
 /* FORM SECTION  */
@@ -317,7 +326,7 @@ body {
 .form__group {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 40vw;
     margin-top: 2em;
 }
 
@@ -363,6 +372,7 @@ footer {
 
 .footer__content h2 {
     font-size: 3em;
+    text-align: center;
 }
 
 .footer__content h5 {
@@ -395,16 +405,21 @@ footer {
 
 @media (max-width: 650px) {
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     /* NAVBAR BURGER */
+
     .toggle {
         display: flex;
-
-        right: .5rem;
+        top: 1.4rem;
+        right: .7rem;
         color: #03dac6;
     }
 
     .wrapper {
-
         position: fixed;
     }
 
@@ -455,41 +470,51 @@ footer {
     }
 
     main {
-        padding-top: 8rem;
-        height: 130%;
+        padding-top: 9rem;
+        width: 50%;
+        height: 100%;
     }
 
     .info__general {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        width: 50vh;
+        width: 50vw;
+        gap: 0;
     }
 
     .info__content h1 {
-        display: flex;
-        justify-content: center;
-        font-size: 2.7rem;
+        font-size: 2em;
+        position: relative;
+        width: fit-content;
+        left: 16rem;
+
 
     }
 
     .info__content p {
-        
-        margin-right: 0;
-        padding: 3rem 2rem 1rem;
-
+        display: none;
     }
 
     .info__content a {
         display: flex;
         justify-content: center;
+        position: relative;
+        top: 1rem;
+    }
+
+    .download__cv {
+        position: relative;
+        left: 6.3rem;
     }
 
     .info__image {
         border: none;
         grid-row: 1;
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 90%;
+        position: relative;
+        left: 11.5rem;
     }
 
     /* ABOUT  */
@@ -498,13 +523,15 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         text-align: justify;
-        padding: 7rem 4rem;
+        padding: 0 4rem;
         height: 100%;
+        position: relative;
+        bottom: 8rem;
 
     }
 
     .about__info h2 {
-        font-size: 2.2rem;
+        font-size: 1.5em;
     }
 
     .about__info p {
@@ -518,23 +545,34 @@ footer {
     /* PORTFOLIO */
     .portfolio {
         width: 100vw;
+        height: 100vh;
+    }
+
+    .portfolio__headings {
+        position: relative;
+        right: 6rem;
+        width: 120%;
+        bottom: 5rem;
+    }
+
+    .portfolio h2 {
+        font-size: 1.5em;
     }
 
     .portfolio__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        gap: 2rem;
-    }
-
-    .portfolio h2 {
-        font-size: 2.2rem;
-        padding-top: 8rem;
+        gap: 0;
+        position: relative;
+        bottom: 5rem;
     }
 
     .card {
-        width: 50%;
+        width: 200px;
         height: 90%;
+        position: relative;
+        left: 3.5rem;
     }
 
     .card__img {
@@ -547,27 +585,36 @@ footer {
 
     .card .project__details__button {
         width: 100%;
-        height: 40px;
+        position: relative;
+        margin-right: 13rem;
+
     }
 
     /* FORM CONTACT  */
 
     .contact__section {
+
         width: 100%;
-
         display: block;
-
-    }
-
-    .container__contact {
+        padding-top: 0;
+        padding: 0;
         display: flex;
         grid-template-columns: 1fr;
-
     }
 
     .contact__heading h2 {
-        font-size: 2.2rem;
-        padding-top: 8rem;
+        font-size: 1.5em;
+        position: relative;
+        left: 3.5rem;
+        width: 20vh;
+        bottom: 3rem;
+    }
+
+    .container__contact {
+        grid-column: 1;
+        position: relative;
+        right: 7.5rem;
+        top: 5rem;
     }
 
     .img__contact {
@@ -575,13 +622,18 @@ footer {
     }
 
     .form__group {
-        width: 55vw;
+        width: 70vw;
     }
 
     .contact__form h4 {
         margin-top: 5rem;
     }
 
+    footer {
 
+    }
+
+    .footer__content {
+    }
 
 }
