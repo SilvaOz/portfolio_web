@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- FONTAWESOME LINK  -->
     <script src="https://kit.fontawesome.com/c642629364.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>WebDeveloper | OSSI</title>
 </head>
 
@@ -15,7 +15,7 @@
     <header class="wrapper">
         <!-- LOGO -->
         <div class="brand">
-            <a href="./home.html"> <h2>O<span>S</span></h2></a>
+            <a href="../src/index.html"> <h2>O<span>S</span></h2></a>
         </div>
         <!-- NAV MENU -->
         <nav class="navbar">
@@ -24,28 +24,97 @@
                 <span class="menu__burger">&equiv;</span>
             </label>
             <ul class="menu">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a class="active"  href="./aboutme.html">ABOUT ME</a></li>
-                <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a class="active" href="../src/index.html">HOME</a></li>
+                <li><a href="../src/aboutme.html">ABOUT ME</a></li>
+                <li><a href="../src/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="../src/contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <main>     
-        <!-- ABOUT ME SECTION -->
-        <article class="about">
-            <img class="about__image" src="./images/ReadyPlayerMe-Avatar.png" alt="oscar silva">
-            <section class="about__info">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perferendis eaque itaque odio
-                    facilis
-                    dicta recusandae repellendus, nobis laborum unde accusamus voluptas vero nemo quia ab, fuga
-                    consequatur,
-                    culpa eum?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla numquam totam possimus velit ipsam.
-                    Eligendi quisquam obcaecati repudiandae. Aspernatur placeat porro eaque, numquam quas quia dolorem
-                    nesciunt iure similique reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis!</p>
-                <button class="download__cv">Read more</button>
+    <main>      
+        <!-- PORTFOLIO SECTION  -->
+        <article class="portfolio">
+            <section class="portfolio__headings">
+                <h2>My Portfolio</h2>
+                <section class="portfolio__container">
+                    <!-- card#1 -->
+                    <section class="card">
+                        <div class="card__img">
+                        </div>
+                        <div class="card__title">
+                            <h3>Project Description</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, saepe.
+                            </p>
+                        </div>
+                        <div class="card__project__links" >
+                            <a href="https://github.com/SilvaOz" target="_blank"  >
+                                <i class="fab fa-github"></i> 
+                            </a>
+                            <a href="">
+                                <i class="fas fa-globe-asia"></i>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                        <div class="button__content">
+                            <button class="project__details__button download__cv">
+                                <a href="#">Project Details</a>
+                            </button>
+                        </div>
+                    </section>
+                    <!-- CARD # 2  -->
+                    <section class="card">
+                        <div class="card__img">
+                        </div>
+                        <div class="card__title">
+                            <h3>Project Description</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, molestias.</p>
+                        </div>
+                        <div class="card__project__links">
+                            <a href="https://github.com/SilvaOz" target="_blank" >
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-globe-asia"></i>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                        <div class="button__content">
+                            <button class="project__details__button download__cv">
+                                <a href="#">Project Details</a>
+                            </button>
+                        </div>
+                    </section>
+                    <!-- CARD # 3 -->
+                    <section class="card">
+                        <div class="card__img">
+                        </div>
+                        <div class="card__title">
+                            <h3>Project Description</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, fugiat?
+                            </p>
+                        </div>
+                        <div class="card__project__links">
+                            <a href="https://github.com/SilvaOz" target="_blank" >
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-globe-asia"></i>
+                            </a>
+                            <a href="">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                        <div class="button__content">
+                            <button class="project__details__button download__cv">
+                                <a href="#">Project Details</a>
+                            </button>
+                        </div>
+                    </section>
+                </section>
             </section>
         </article>
         
@@ -65,7 +134,7 @@
         </section>
     </footer>
     <!-- SCRIPT ANIMATION PARTICLES -->
-    <script src="./particles.min.js"></script>
+    <script src="../script/particles.min.js"></script>
     <script>
         particlesJS(
             {

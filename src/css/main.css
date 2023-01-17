@@ -214,7 +214,7 @@ body {
 .card__img {
     width: 100%;
     height: 200px;
-    background-image: url(./images/wp43363-kali-linux-wallpaper-1920x1080.jpg);
+    background-image: url(../images/wp43363-kali-linux-wallpaper-1920x1080.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -438,7 +438,7 @@ footer {
         border: 2px solid #03dac6;
         padding: 19px 100px;
         color: #03dac6;
-        transition: ease-in .5s;
+        transition: ease-in .1s;
 
     }
 

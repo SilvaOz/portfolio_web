@@ -7,17 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- FONTAWESOME LINK  -->
     <script src="https://kit.fontawesome.com/c642629364.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>WebDeveloper | OSSI</title>
 </head>
 
 <body>
     <header class="wrapper">
         <!-- LOGO -->
-        <div class="brand"><a href="./home.html">
-                <h2>O<span>S</span></h2>
-            </a>
-
+        <div class="brand">
+            <a href="./home.html"> <h2>O<span>S</span></h2></a>
         </div>
         <!-- NAV MENU -->
         <nav class="navbar">
@@ -26,30 +24,36 @@
                 <span class="menu__burger">&equiv;</span>
             </label>
             <ul class="menu">
-                <li><a class="active" href="./index.html">HOME</a></li>
-                <li><a href="./aboutme.html">ABOUT ME</a></li>
-                <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a class="active" href="../src/index.html">HOME</a></li>
+                <li><a href="../src/aboutme.html">ABOUT ME</a></li>
+                <li><a href="../src/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="../src/contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- HOME SECTION -->
-        <article class="info__general">
-            <section class="info__content">
-                <h1>I'm <span>Oscar</span> Silva</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at ex fugiat nostrum! Commodi quas
-                    quae ex, sit voluptates a quis doloribus repellat excepturi. Omnis sint numquam asperiores, amet quo
-                    labore mollitia molestias eligendi, earum laborum, nemo ipsum quisquam tempora.</p>
-                <a download href="#"><button class="download__cv">Download CV</button> </a>
+    <main>     
+        <!-- ABOUT ME SECTION -->
+        <article class="about">
+            <img class="about__image" src="./images/ReadyPlayerMe-Avatar.png" alt="oscar silva">
+            <section class="about__info">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perferendis eaque itaque odio
+                    facilis
+                    dicta recusandae repellendus, nobis laborum unde accusamus voluptas vero nemo quia ab, fuga
+                    consequatur,
+                    culpa eum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla numquam totam possimus velit ipsam.
+                    Eligendi quisquam obcaecati repudiandae. Aspernatur placeat porro eaque, numquam quas quia dolorem
+                    nesciunt iure similique reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis!</p>
+                <button class="download__cv">Read more</button>
             </section>
-            <img class="info__image" src="./images/Me-Avatar.png" alt="Oscar-Silva picture">
         </article>
+        
     </main>
     <!-- ANIMATION PARTICLES -->
     <div id="particles-js"></div>
     <!-- FOOTER SECTION  -->
-    <!-- <footer>
+    <footer>
         <section class="footer__content">
             <h2>Oscar Silva</h2>
             <h5>Frontend Developer</h5>
@@ -59,9 +63,9 @@
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-twitter-square"></i>
         </section>
-    </footer> -->
+    </footer>
     <!-- SCRIPT ANIMATION PARTICLES -->
-    <script src="./particles.min.js"></script>
+    <script src="../script/particles.min.js"></script>
     <script>
         particlesJS(
             {
