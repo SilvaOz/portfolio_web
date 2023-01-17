@@ -466,8 +466,9 @@ footer {
     }
 
     .info__content p {
+        
         margin-right: 0;
-        padding: 2rem 3rem 2rem;
+        padding: 3rem 2rem 1rem;
 
     }
 
