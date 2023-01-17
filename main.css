@@ -461,13 +461,13 @@ footer {
     .info__content h1 {
         display: flex;
         justify-content: center;
-        font-size: 3rem;
+        font-size: 2.6rem;
 
     }
 
     .info__content p {
-        padding-top: 1.5rem;
         margin-right: 0;
+        padding: 2rem 5rem 2rem;
 
     }
 
