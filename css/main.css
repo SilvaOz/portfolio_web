@@ -25,11 +25,12 @@ body {
 
 /* logo */
 .brand {
-    padding: 1.5em 2em;
-
+    padding: 4em 9.5em;
+    
 }
 
 .brand a {
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -43,7 +44,7 @@ body {
 
 /* navigator */
 .navbar {
-    padding: 2em 0;
+    padding: 5em 1.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -83,7 +84,7 @@ body {
     color: lightgray;
     text-decoration: none;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 10px 15px;
     white-space: nowrap;
 }
 
@@ -92,9 +93,10 @@ body {
 }
 
 .menu a:hover {
-    background-color: #03dac6;
-    color: #191c32;
-    transition: ease-in .4s;
+    
+    border: 2px solid #03dac6;
+    color: #03dac6;
+    /* transition: ease-in .4s; */
 }
 
 /* here is my main  */
@@ -107,6 +109,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+   
 }
 
 .info__content h1 {
@@ -143,26 +146,31 @@ body {
     width: 500px;
     border: 6px solid #03dac6;
     height: 500px;
+    
+    
 }
 
 /* SECTION ABOUT  */
 .about {
+    padding-left: 2rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
-    height: 86vh;
+    height: 100vh;
     align-items: center;
     color: white;
 }
 
 .about__image {
-    width: 100%;
+    width: 120%;
     grid-column: 1/5;
+    height: 100vh;
+  
 }
 
 .about__info {
     grid-column: 5/10;
-    padding: 3em;
+    
 }
 
 .about__info h2 {
@@ -174,17 +182,17 @@ body {
 .about__info p {
     margin-top: 2rem;
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 /* HERE IS MY CARD SECTION "PORTFOLIO" */
 .portfolio {
     width: 100vw;
     height: 100vh;
-
+    border: 3px solid red;
 }
 
 .portfolio__headings {
-    width: 100vw;
     padding: 7rem;
     padding-top: 2rem;
 }
@@ -196,16 +204,17 @@ body {
 }
 
 .portfolio__container {
-    width: 80vw;
+    width: 60vw;
     height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     padding-top: 3em;
+    border: 3px solid red;
 }
 
 .card {
-    width: 350px;
+    width:350px;
     height: 450px;
     background-color: rgb(28, 48, 86);
     margin: 1em;
@@ -509,8 +518,7 @@ footer {
 
     /* PORTFOLIO */
     .portfolio {
-        width: 100%;
-        height: 150vh;
+        width: 100vw;
     }
 
     .portfolio__container {
