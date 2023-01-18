@@ -264,12 +264,8 @@ body {
 .card .project__details__button {
     width: 90%;
     margin: 0 auto;
-    margin: 1em;
-}
-
-.card .project__details__button a {
-    text-decoration: none;
-    text-transform: uppercase;
+    margin: 1em;text-transform: uppercase;
+    color: black;
 }
 
 .button__content {
