@@ -365,8 +365,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200px;
-    padding: 2em;
+    height: 30vh;
+    padding: 1.5em;
     background-color: #03dac6;
 }
 
@@ -399,11 +399,10 @@ footer {
     height: 100%;
     top: 0;
     z-index: -1;
-
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 480px) {
 
     body {
         margin: 0;
@@ -481,6 +480,7 @@ footer {
         justify-content: center;
         width: 50vw;
         gap: 0;
+        
     }
 
     .info__content h1 {
@@ -511,10 +511,11 @@ footer {
     .info__image {
         border: none;
         grid-row: 1;
-        width: 70%;
+        width: 60%;
         height: 90%;
         position: relative;
-        left: 11.5rem;
+        left: 13rem;
+    
     }
 
     /* ABOUT  */
@@ -523,15 +524,14 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         text-align: justify;
-        padding: 0 4rem;
+        padding: 0 3.5rem;
         height: 100%;
         position: relative;
-        bottom: 8rem;
-
+        bottom: 3rem;
     }
 
     .about__info h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .about__info p {
@@ -546,6 +546,7 @@ footer {
     .portfolio {
         width: 100vw;
         height: 100vh;
+        
     }
 
     .portfolio__headings {
@@ -556,7 +557,8 @@ footer {
     }
 
     .portfolio h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
+       
     }
 
     .portfolio__container {
@@ -566,6 +568,7 @@ footer {
         gap: 0;
         position: relative;
         bottom: 5rem;
+        
     }
 
     .card {
@@ -573,12 +576,18 @@ footer {
         height: 90%;
         position: relative;
         left: 3.5rem;
+        background-color: #011526;
+    }
+    .card-3{
+        display: none;
     }
 
     .card__img {
         display: none;
     }
-
+    .card__title{
+        color: #1CFFE8;
+    }
     .card__title p {
         display: none;
     }
@@ -603,10 +612,10 @@ footer {
     }
 
     .contact__heading h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         position: relative;
         left: 3.5rem;
-        width: 20vh;
+        width: 26.5vh;
         bottom: 3rem;
     }
 
@@ -614,7 +623,6 @@ footer {
         grid-column: 1;
         position: relative;
         right: 7.5rem;
-        top: 5rem;
     }
 
     .img__contact {
@@ -630,10 +638,25 @@ footer {
     }
 
     footer {
+    height: 26vh;  
+    
 
     }
+    .footer__content h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
 
-    .footer__content {
+    .footer__content h5{
+        font-size: 1rem;
+    }
+    .social__networks {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .social__networks i {
+        font-size: 1em;
     }
 
 }
