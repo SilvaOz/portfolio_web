@@ -1,7 +1,7 @@
 # PORTFOLIO WEB
 
 ## PROJECT DESCRIPTION
-- This project is created to practice some of my knowledge with html css and a bit of javascript.
+- This project is created to practice some of my knowledge with Html Css.
 It is a project for beginners.
 the project is about making a simple portfolio.
 
